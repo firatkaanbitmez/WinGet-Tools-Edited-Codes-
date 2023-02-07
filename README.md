@@ -12,11 +12,9 @@ Update and Install your software using WinGet and PowerShell
 
 # WinGet Basic Codes
 
-H2 Header (Underline)
+Winget search App-Name
 -------------
 
-
-**Winget search App-Name
 
 winget search firefox
 winget search "adobe acrobat"
