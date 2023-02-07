@@ -12,6 +12,7 @@ Update and Install your software using WinGet and PowerShell
 
 #WinGet Basic Codes
 
+
 **Winget search App-Name
 
 winget search firefox
