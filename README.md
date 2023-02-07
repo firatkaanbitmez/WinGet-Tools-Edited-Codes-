@@ -15,6 +15,7 @@ Update and Install your software using WinGet and PowerShell
 Winget search App-Name
 -------------
 winget search firefox
+
 winget search "adobe acrobat"
   
 Winget Upgrade
@@ -123,10 +124,17 @@ curl -L https://github.com/microsoft/winget-cli/releases/latest/download/Microso
 powershell -command "Add-AppPackage -path "%userprofile%\downloads\winpackageins.msixbundle""
 
 winget search zoom --accept-source-agreements
+
 winget source reset --force
+
 winget source add -n winget "https://cdn.winget.microsoft.com/cache"
+
 winget source update --accept-source-agreements
+
 winget search vlc --accept-source-agreements
+
 taskkill /f /im Infinity.exe
+
 cd %userprofile%\desktop
+
 Infinity.lnk
