@@ -112,7 +112,7 @@ Help
 
 
 
-# WinGet for App Packager Automatic Last Version Installer Batch Codes
+# Latest version Package installer download and installation code for WinGet
 
 cd %userprofile%\downloads
 
