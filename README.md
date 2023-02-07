@@ -1,9 +1,12 @@
 # WinGet Tools (Edited Codes)
 Update and Install your software using WinGet and PowerShell
 
-# Features /n
+# Features 
+
 *Detailed Table
+
 *C programing
+
 *use for Powershell
 
 #Example Image
