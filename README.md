@@ -17,7 +17,15 @@ Winget search App-Name
 winget search firefox
 winget search "adobe acrobat"
   
+Winget Upgrade
+---------
+winget upgrade --all --accept-package-agreements --accept-source-agreements --override --silent
 
+winget upgrade --all
+
+winget upgrade App-ID
+
+winget upgrade Adobe.Acrobat.Reader.64-bit
 
 Winget list
 ------------
