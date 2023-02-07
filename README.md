@@ -111,3 +111,22 @@ Help
 ![example](https://user-images.githubusercontent.com/74864221/217322309-fa6ae15c-08c4-450e-9a0f-2d3516a2c9f8.png)
 
 
+
+# WinGet for App Packager Automatic Last Version Installer Batch Codes
+
+cd %userprofile%\downloads
+
+curl -L https://github.com/microsoft/winget-cli/releases/latest/download/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -o winpackageins.msixbundle
+
+
+
+powershell -command "Add-AppPackage -path "%userprofile%\downloads\winpackageins.msixbundle""
+
+winget search zoom --accept-source-agreements
+winget source reset --force
+winget source add -n winget "https://cdn.winget.microsoft.com/cache"
+winget source update --accept-source-agreements
+winget search vlc --accept-source-agreements
+taskkill /f /im Infinity.exe
+cd %userprofile%\desktop
+Infinity.lnk
