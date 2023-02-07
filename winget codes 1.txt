@@ -1,0 +1,74 @@
+winget upgrade xxx 
+winget install xxx
+winget search --help
+winget list 
+winget upgrade
+winget upgrade -h --id APP-ID
+winget upgrade -h --id Mozilla.Firefox
+winget upgrade -h --all
+winget list --source winget
+winget search "adobe acrobat"
+WinGet Install Adobe.Acrobat.Reader.64-bit
+Winget Install --id Adobe.Acrobat.Reader.64-bit
+Winget Install --silent --id Adobe.Acrobat.Reader.64-bit
+Winget Install --silent --accept-source-agreements --id Adobe.Acrobat.Reader.64-bit
+Winget Install --silent --accept-source-agreements --id Adobe.Acrobat.Reader.64-bit
+Winget UnInstall --id Adobe.Acrobat.Reader.64-bit
+WinGet UnInstall Adobe.Acrobat.Reader.64-bit
+WinGet UnInstall --silent --id Adobe.Acrobat.Reader.64-bit
+winget uninstall "microsoft teams" --version 1.5.00.14473
+Winget UnInstall --help
+winget uninstall Notepad++.Notepad++ --silent
+
+
+ winget upgrade --all --accept-package-agreements --accept-source-agreements --override --silent
+
+
+-m,–manifest – The path to the manifest of the package
+–id – Filter results by id
+–name – Filter results by name
+–moniker – Filter results by moniker
+-v,–version – Use the specified version; default is the latest version
+-s,–source – Find package using the specified source
+-e,–exact – Find package using exact match
+-i,–interactive – Request interactive installation; user input may be needed
+-h,–silent – Request silent installation
+-o,–log – Log location (if supported)
+–header – Optional Windows-Package-Manager REST source HTTP header
+–accept-source-agreements – Accept all source agreements during source operations
+
+
+
+
+winget source list
+winget source add --name [name] [url]
+winget source add --name newwinget https://winget.azureedge.net/cache
+winget source update
+winget source remove --name [name]
+winget source remove --name newwinget 
+winget source reset --force
+winget list
+
+
+
+$toolIds = 
+    "Microsoft.PowerShell", 
+    "Microsoft.VisualStudioCode", 
+    "Google.AndroidStudio", 
+    "Notepad++.Notepad++", 
+    "Microsoft.WindowsTerminal", 
+    "Microsoft.VisualStudio.2022.Community",
+    "Microsoft.dotnet",
+    "Git.Git";
+
+for($i = 0; $i -lt $toolIds.Length; $i++)
+{
+    Write-Host "Upgrading $($toolIds[$i]) ($($i+1)/$($toolIds.Length))";
+    winget upgrade --id=$($toolIds[$i]); 
+    Write-Host "";
+}
+
+
+
+
+
